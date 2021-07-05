@@ -137,3 +137,36 @@ for (i = 0; i < text.length; i++) {
     console.log(text[text.length - (i + 1)]);
 }
 */
+
+//çarpım tablosu
+/*
+for (let i = 0; i <= 10; i++) {
+    for (j = 0; j <= 10; j++) {
+        console.log(`${i} * ${j}= ${i*j}`);
+    }
+}
+*/
+
+//dizi elemanlarını toplama
+/*
+const number = [13, 34, 24, 67, 23, 90]
+
+let result = 0;
+for (let i = 0; i < number.length; i++) {
+    result += number[i];
+
+}
+console.log(result);
+*/
+
+//factorial
+/*
+const x = prompt("enter a number")
+
+result = 1;
+for (i = 1; i <= x; i++) {
+    result = result * i;
+}
+
+console.log(result);
+*/
