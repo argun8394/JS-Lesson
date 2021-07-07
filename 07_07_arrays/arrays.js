@@ -107,8 +107,65 @@ const x = colors.indexOf("gray")//returns  -1
 
 console.log(x);
 */
-
+/* 
 const colors = ["Red", "Yellow", "Green", "Blue", "Green", "Red", "Yellow", "Blue"];
 const last = colors.lastIndexOf("Blue", -2) // 6 ile de aynı sonucu verir
 const last1 = colors.lastIndexOf("Gray") //returns -1
-console.log(last1)
+console.log(last1) */
+
+/* 
+//Arraylerde durum
+function test2(testData) {
+    console.log(`inside function before operation ${testData}`);
+    //testData = [2, 4, 6, 8];
+    //testData.push(8)
+    testData.pop()
+    console.log(`inside function after operation ${testData}`);
+}
+const arr = [1, 2, 3, 4];
+test2(arr);
+console.log(`outside function after operation ${arr}`); */
+
+/* const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+const a = arr[0];
+const b = arr[1];
+const c = arr[2];
+
+const [x, y, z] = arr;
+console.log(x, y, z);
+console.log(x, typeof x); */
+
+/* const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+const [t, u, v, ...others] = arr;
+console.log(t, u, v);
+console.log(others, Array.isArray(others)); //Array array midir ? cevabını verir
+console.log(arr);
+
+console.log(arr instanceof Array);//Array array midir ? cevabını verir */
+
+/* const arr = [1, 2];
+const [x = 1, y = 1, z = 1] = arr
+console.log(x, y, z); */
+
+//destructuring assignment
+/* let x = 5;
+let y = 10;
+
+[x, y] = [y, x];
+console.log("x=", x, "y=", y); */
+
+/* const colors = ["red", "yellow", "green", "blue", "pink", "green"];
+
+for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
+} */
+
+/* 
+//foreach for in boş elemanları atlar ,,for of ve for atlamaz
+const colors = ["red", , "yellow", "green", "blue", "pink", "green"];
+console.log(colors);
+
+//for (i of colors) console.log(i);
+
+//for (let i in colors) console.log(colors[i]);
+colors.forEach(i => console.log(i)); //içerisine call back function alır */
