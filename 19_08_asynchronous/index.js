@@ -22,12 +22,19 @@
 // console.log("hello3");
 // console.timeLog("bir");
 
-const showTime = () => {
-    const timeLabel = document.querySelector("p");
-    const time = new Date();
 
+let counter = 0;
+
+function showTime() {
+    if (counter == 10) {
+        clearInterval(id);
+    }
+    const timeLabel = document.querySelector("p");
+    // console.log(timeLabel);
+    const time = new Date();
     timeLabel.innerHTML = time.toLocaleTimeString();
-};
-setInterval(() => {
-    showTime();
-}, 1000);
+    counter++;
+}
+
+const id = setInterval(showTime, 1000);
+console.log("id :>> ", id);
