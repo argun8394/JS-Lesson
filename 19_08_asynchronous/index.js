@@ -21,18 +21,21 @@
 // console.timeLog("bir");
 // console.log("hello3");
 // console.timeLog("bir");
+const slowTask = () => {
+    let i = 0;
+    do {
+        i++;
+    } while (i < 900 _000_000);
+    return "task is completed.";
+};
 
-let counter = 0;
-const id = setInterval(function() {
-    const timeLabel = document.querySelector("p");
-    // console.log(timeLabel);
-    const time = new Date();
-    timeLabel.innerHTML = time.toLocaleTimeString();
-    counter++;
-    if (counter == 5) {
-        timeLabel.innerHTML = "Merhaba";
-        clearInterval(id);
-        // console.log("timeLabel :>> ", timeLabel);
-    }
-}, 1000);
-console.log("id :>> ", id);
+console.time();
+console.log("hello");
+console.timeLog();
+// slowTask();
+console.log("ara 1");
+console.timeLog();
+// slowTask();
+console.log("son");
+
+console.timeEnd();
