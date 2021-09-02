@@ -26,11 +26,19 @@
 
 
 
-//***********Array Map Method********************************
+// //***********Array Map Method********************************
 
-const numbers = [1, 3, 5, 7];
-const squares = numbers.map(number => number * numbers);
+// const numbers = [1, 3, 5, 7];
+// const squares = numbers.map(number => number * numbers);
 
-console.log(squares);//// output: Array [1, 9, 25, 49]
+// console.log(squares);//// output: Array [1, 9, 25, 49]
+
+
+
+//********************************Array Filter Method********************************
+
+const numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+console.log(numbers.filter((number) => !(number%2)));
 
 
