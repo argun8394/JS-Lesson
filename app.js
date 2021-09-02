@@ -37,8 +37,14 @@
 
 //********************************Array Filter Method********************************
 
-const numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+// const numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
-console.log(numbers.filter((number) => !(number%2)));
+// console.log(numbers.filter((number) => !(number%2)));
+
+//********************************Array Reduce Method********************************
 
 
+const arr1 = [1,2,3,4]
+
+const reducer = (accumulator, currentValue)=>accumulator*currentValue;
+console.log(arr1.reduce(reducer));
