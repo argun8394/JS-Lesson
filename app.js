@@ -18,3 +18,9 @@ mySet.add(myObject);
 console.log(mySet);
 console.log(mySet.has(myObject));
 console.log(mySet.has(4));
+
+for (let value of mySet) console.log(value);
+
+mySet.forEach((value, i) => console.log(value, i));//as set has no key, here value and i both display same value
+
+
